@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   col.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msamhaou <msamhaou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: taha <taha@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/06 17:44:43 by msamhaou          #+#    #+#             */
-/*   Updated: 2023/08/06 19:08:15 by msamhaou         ###   ########.fr       */
+/*   Updated: 2023/08/06 20:21:21 by taha             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void	ft_free_addr(t_collector *list)
 	{
 		printf("freed %p\n", list->addr);
 		free(list->addr);
+		list = list->next;
 	}
 }
 
